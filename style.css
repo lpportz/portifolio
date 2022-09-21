@@ -1,6 +1,7 @@
 /*retira margens da página*/
 body{
     margin: 0;
+    height: 5000px;
     box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ body{
 
 /*imagem de banner cartonizada*/
 .carton{
-    height: 969px;
+    width: 1680px;
     float: right;  
 }
 
