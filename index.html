@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,12 +29,10 @@
 
         .whatsapp{
             position: absolute;
-            top: 700px;
-            right: 15px; 
+            top: 639px;
+            right: 1px; 
             position: fixed;
- 
-   
-        }   
+    }   
          /*menu para telas grande, mexe no background da barra superior*/
         #menu {
             background: #000000;
@@ -122,9 +121,9 @@
         @media only screen and (max-width: 1377px){
             /*imagem cartonizada*/
 	        .carton{
-                margin-top: -20rem;
-		        width: 85rem;
-		        height: 55rem;
+                
+		        width: 45rem;
+		        height: 75rem;
 		       
             }
         }
@@ -132,16 +131,35 @@
         @media only screen and (max-width: 1377px){
             /*botão whatsapp*/
             .whatsapp{
-                position: absolute;
-                bottom: 0rem;
-                right: 0rem; 
                 position: fixed;
+                top: 45.5rem;
+                
             }
             /*foto whatsapp*/
             .ftwht{
-                width: 130px;
-                height: 130px;
+                width: 10rem;
+                height: 10rem;
+                
+               
             }
+        }
+        /*mudança feita para funcionar no meu iphone/verificar em outros celulres*/
+        @media only screen and (max-width: 450px){
+            .whatsapp{
+                position: fixed;
+                top: 38.5rem;
+                
+            }
+        }
+        /*dimensiona tamanho do rodape, cor de fonte posição e etc*/
+        .rodape{
+            background-color: #000000;
+            color: #fcfafb;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            text-align: cente;
+            height: 5rem;
         }
 
     </style>
@@ -171,7 +189,14 @@
     <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5551997051843">
         <img class="ftwht" src="https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png" width="256" height="256"alt=""> 
     </a>
-    <footer></footer>
+    <footer class="rodape">
+        <div class="iconesrodape">
+            <a href="face"></a>
+            <a href="behance"></a>
+            <a href="linken"></a>
+        </div>
+        <p class="dadosrodape">&copy; @DateTime.Now.Year</p>
+    </footer>
 
     <script>
         function updatemenu() {
@@ -194,16 +219,6 @@
 
 
  
-
-
-
-
-
-
-
-
- 
-
 
 
 
