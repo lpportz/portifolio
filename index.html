@@ -35,10 +35,7 @@
             top: 71.5%;
             right: 5px;
             position: fixed;
-            
-            
-           
-         }
+        }
 
         
          /*menu para telas grande, mexe no background da barra superior*/
@@ -133,15 +130,28 @@
 		        height: 720px;
             }
         }
+        @media only screen and (max-width: 400px){
+            /*botão whatsapp*/
+            .whatsapp{
+                position: absolute;
+                background-image: url('https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png');
+                width: 150px;
+                height:150px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 65.5%;
+                right: 5px;
+                position: fixed;
+            }
+        }
          /*dimensiona tamanho do rodape, cor de fonte posição e etc*/
         .rodape{
-            background-color: #000000;
-            color: #fcfafb;
-            bottom: 0;
+            background: rgb(102, 102, 104);
             position: fixed;
+            margin-top: 100%;
             width: 100%;
-            text-align: cente;
             height: 5rem;
+            
         }
 
     </style>
@@ -167,9 +177,13 @@
     </nav>
 
     <div class="carton"></div>
+
+
     <div class="whatsapp">
         <a class="whatsmsg" href="https://api.whatsapp.com/send?phone=5551997051843"></a>
     </div>
+
+
     <footer class="rodape">
         <div class="iconesrodape">
             <a href="face"></a>
@@ -191,6 +205,18 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+ 
+
+
+
 
 
 
