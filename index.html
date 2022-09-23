@@ -25,13 +25,22 @@
             z-index: 3;
 	    }
          /*botão whatsapp*/
-	 .whatsapp{
+         .whatsapp{
             position: absolute;
-            right: 20px;
-            /*z-index: 1;*/
-        }   
-       
-       
+            background-image: url('https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png');
+            width: 200px;
+            height:200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 71.5%;
+            right: 5px;
+            position: fixed;
+            
+            
+           
+         }
+
+        
          /*menu para telas grande, mexe no background da barra superior*/
         #menu {
             background: #000000;
@@ -120,16 +129,11 @@
         @media only screen and (max-width: 1377px){
             /*imagem cartonizada*/
 	        .carton{
-                
-		        width: 1380px;
+                width: 1380px;
 		        height: 720px;
-                
-		       
             }
         }
-
-    
-        /*dimensiona tamanho do rodape, cor de fonte posição e etc*/
+         /*dimensiona tamanho do rodape, cor de fonte posição e etc*/
         .rodape{
             background-color: #000000;
             color: #fcfafb;
@@ -163,10 +167,9 @@
     </nav>
 
     <div class="carton"></div>
-
-    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5551997051843">
-        <img class="ftwht" src="https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png" width="256" height="256"alt=""> 
-    </a>
+    <div class="whatsapp">
+        <a class="whatsmsg" href="https://api.whatsapp.com/send?phone=5551997051843"></a>
+    </div>
     <footer class="rodape">
         <div class="iconesrodape">
             <a href="face"></a>
@@ -198,10 +201,6 @@
 
  
 
-
-
-
- 
 
 
 
