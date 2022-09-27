@@ -108,8 +108,9 @@ body {
 	.carton {
 		position: relative;
 		background-image: url('https://user-images.githubusercontent.com/89275430/191371423-7ea1f613-4f86-4492-b62e-a81994a399f5.png');
+		background-repeat: no-repeat;
 		width: 1280px;
-		height: 180vw;
+		height: 650px;
 		float: right;
 		margin-top: -20px;
 		border-bottom: #000000 5px solid;
