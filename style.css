@@ -3,9 +3,215 @@ body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
+#menu {
+	margin-top: 20px;
+	background: #000000;
+	opacity: 0.7;
+	color: #FFF;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 20;
+}
 
-/*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*/
-@media only screen and (max-width: 450px) {
+
+#menu ul,
+#menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+
+
+#menu ul {
+	width: 100%;
+}
+
+
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+
+
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+
+#menu li a:hover {
+	color: #07a9df;
+	background: #4e4d4d;
+	height: 45px;
+}
+
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+
+
+#menu ul.sub-menus {
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #838080;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+
+
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+
+#menu ul.sub-menus a {
+	color: #fcfafb;
+	font-size: 16px;
+}
+
+
+#menu li:hover ul.sub-menus {
+	display: block;
+}
+
+
+#menu ul.sub-menus a:hover {
+	color: #07a9df;
+	background: #4e4d4d;
+}
+
+.carton {
+	position: relative;
+	background-image: url('https://user-images.githubusercontent.com/89275430/191371423-7ea1f613-4f86-4492-b62e-a81994a399f5.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 900px;
+	margin-top: -20px;
+	border-bottom: #000000 5px solid;
+}
+
+.sob {
+	display: flex;
+	width: 100vw;
+}
+
+p,
+h2 {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+h2 {
+	padding-top: 30px;
+}
+
+p {
+	padding-top: 5px;
+	font-size: larger;
+}
+
+.cont {
+	position: relative;
+}
+
+.whats {
+	position: absolute;
+	background-image: url('https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png');
+	background-repeat: no-repeat;
+	background-size: 120px;
+	height: 120px;
+	width: 100vw;
+	margin-left: 25%;
+}
+
+.malito {
+	position: absolute;
+	background-image: url('https://user-images.githubusercontent.com/89275430/192317447-32fd40c1-4a42-4572-b218-61f8382ca1dd.png');
+	background-repeat: no-repeat;
+	background-size: 150px;
+	height: 120px;
+	width: 100vw;
+	margin-left: 75%;
+}
+
+.rodape {
+	position: relative;
+	background-color: #696767;
+	width: 100%;
+	height: 70px;
+	list-style-type: none;
+	border-top: 3px solid #000000;
+	margin-top: 150PX;
+
+}
+
+.face {
+	position: absolute;
+	background-image: url('https://user-images.githubusercontent.com/89275430/191938348-96ebe78c-d58b-4c71-9715-a69d84746064.png');
+	background-repeat: no-repeat;
+	background-size: 60PX;
+	width: 100VW;
+	height: 60px;
+	list-style-type: none;
+	margin-top: 137PX;
+	z-index: 20;
+	left: 8.2rem;
+}
+
+.behance {
+	position: absolute;
+	background-image: url('https://user-images.githubusercontent.com/89275430/191938415-eb0bb140-fe50-45e4-86bf-24f73616b5b0.png');
+	background-repeat: no-repeat;
+	background-size: 60PX;
+	width: 100VW;
+	height: 60px;
+	list-style-type: none;
+	margin-top: 137PX;
+	z-index: 20;
+	left: 4.2rem;
+}
+
+.linken {
+	position: absolute;
+	background-image: url('https://user-images.githubusercontent.com/89275430/191938451-5275ba47-ae04-4e51-a6ed-5c658181bc42.png');
+	background-repeat: no-repeat;
+	background-size: 60PX;
+	width: 100VW;
+	height: 60px;
+	list-style-type: none;
+	margin-top: 137PX;
+	z-index: 20;
+	left: 0.2rem;
+	
+	
+}
+h2{
+	text-align: center;
+}
+
+/*telas desktops responsiva*/
+@media only screen and (max-width: 1295px) {
 	#menu {
 		margin-top: 0px;
 		background: #000000;
@@ -17,7 +223,7 @@ body {
 		z-index: 20;
 	}
 
-	/*menu para telas grandes,mexe no alinhamento das opções do menu.*/
+
 	#menu ul,
 	#menu li {
 		margin: 0 auto;
@@ -25,19 +231,19 @@ body {
 		list-style: none
 	}
 
-	/*menu para telas grandes, muda a ixibição dos itens na vertical*/
+
 	#menu ul {
 		width: 100%;
 	}
 
-	/*menu para telas grandes, mexe nas opçõesdo menu,para mexer no bloco todo*/
+
 	#menu li {
 		float: left;
 		display: inline;
 		position: relative;
 	}
 
-	/*menu para telas grandes, mexe nas opçõesdo menu,letra, cor tamanho*/
+
 	#menu a {
 		display: block;
 		line-height: 45px;
@@ -47,20 +253,19 @@ body {
 		font-size: 16px;
 	}
 
-	/*menu para telas grandes, mexe na opçaõ portifolio ,aumenta largura*/
 	#menu a.dropdown-arrow:after {
 		content: "\25BE";
 		margin-left: 5px;
 	}
 
-	/*menu para telas grandes, mexe nas opç~es do menu, quando passa o mouse*/
+
 	#menu li a:hover {
 		color: #07a9df;
 		background: #4e4d4d;
 		height: 45px;
 	}
 
-	/*menu para telas grande*/
+
 	#menu input {
 		display: none;
 		margin: 0;
@@ -71,7 +276,7 @@ body {
 		cursor: pointer
 	}
 
-	/*fundo das opções do portifólio*/
+
 	#menu ul.sub-menus {
 		height: auto;
 		overflow: hidden;
@@ -82,24 +287,23 @@ body {
 		display: none;
 	}
 
-	/*nomes dos trabalhos do portifolio*/
+
 	#menu ul.sub-menus li {
 		display: block;
 		width: 100%;
 	}
 
-	/*nomes dos trabalhos do portifolio*/
 	#menu ul.sub-menus a {
 		color: #fcfafb;
 		font-size: 16px;
 	}
 
-	/*nomes dos trabalhos abre opçaõ quando passa por cima do portifolio*/
+
 	#menu li:hover ul.sub-menus {
 		display: block;
 	}
 
-	/*mostra qual dos trabalhos do  portifolio que esta sendo selecionado*/
+
 	#menu ul.sub-menus a:hover {
 		color: #07a9df;
 		background: #4e4d4d;
@@ -133,6 +337,7 @@ body {
 
 	p {
 		padding-top: 5px;
+		font-size: larger;
 	}
 
 	.cont {
@@ -146,7 +351,7 @@ body {
 		background-size: 120px;
 		height: 120px;
 		width: 100vw;
-		margin-left: 40px;
+		margin-left: 25%;
 	}
 
 	.malito {
@@ -154,9 +359,221 @@ body {
 		background-image: url('https://user-images.githubusercontent.com/89275430/192317447-32fd40c1-4a42-4572-b218-61f8382ca1dd.png');
 		background-repeat: no-repeat;
 		background-size: 150px;
-		height: 150px;
+		height: 120px;
 		width: 100vw;
-		left: 50%;
+		margin-left: 75%;
+	}
+
+	.rodape {
+		position: relative;
+		background-color: #696767;
+		width: 100%;
+		height: 70px;
+		list-style-type: none;
+		border-top: 3px solid #000000;
+		margin-top: 150PX;
+
+	}
+
+	.face {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938348-96ebe78c-d58b-4c71-9715-a69d84746064.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 8.2rem;
+	}
+
+	.behance {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938415-eb0bb140-fe50-45e4-86bf-24f73616b5b0.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 4.2rem;
+	}
+
+	.linken {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938451-5275ba47-ae04-4e51-a6ed-5c658181bc42.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 0.2rem;
+		
+		
+	}
+	h2{
+		text-align: center;
+	}
+}
+
+
+
+/*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*Mobile-*/
+@media only screen and (max-width: 450px) {
+	#menu {
+		margin-top: 0px;
+		background: #000000;
+		opacity: 0.7;
+		color: #FFF;
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 20;
+	}
+
+
+	#menu ul,
+	#menu li {
+		margin: 0 auto;
+		padding: 0;
+		list-style: none
+	}
+
+
+	#menu ul {
+		width: 100%;
+	}
+
+
+	#menu li {
+		float: left;
+		display: inline;
+		position: relative;
+	}
+
+
+	#menu a {
+		display: block;
+		line-height: 45px;
+		padding: 0 14px;
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 16px;
+	}
+
+	#menu a.dropdown-arrow:after {
+		content: "\25BE";
+		margin-left: 5px;
+	}
+
+
+	#menu li a:hover {
+		color: #07a9df;
+		background: #4e4d4d;
+		height: 45px;
+	}
+
+
+	#menu input {
+		display: none;
+		margin: 0;
+		padding: 0;
+		height: 45px;
+		width: 100%;
+		opacity: 0;
+		cursor: pointer
+	}
+
+
+	#menu ul.sub-menus {
+		height: auto;
+		overflow: hidden;
+		width: 170px;
+		background: #838080;
+		position: absolute;
+		z-index: 99;
+		display: none;
+	}
+
+
+	#menu ul.sub-menus li {
+		display: block;
+		width: 100%;
+	}
+
+	#menu ul.sub-menus a {
+		color: #fcfafb;
+		font-size: 16px;
+	}
+
+
+	#menu li:hover ul.sub-menus {
+		display: block;
+	}
+
+
+	#menu ul.sub-menus a:hover {
+		color: #07a9df;
+		background: #4e4d4d;
+	}
+
+	.carton {
+		position: relative;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191371423-7ea1f613-4f86-4492-b62e-a81994a399f5.png');
+		background-repeat: no-repeat;
+		width: 1280px;
+		height: 650px;
+		float: right;
+		margin-top: -20px;
+		border-bottom: #000000 5px solid;
+	}
+
+	.sob {
+		display: flex;
+		width: 100vw;
+	}
+
+	p,
+	h2 {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	h2 {
+		padding-top: 30px;
+	}
+
+	p {
+		padding-top: 5px;
+		font-size: larger;
+	}
+
+	.cont {
+		position: relative;
+	}
+
+	.whats {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png');
+		background-repeat: no-repeat;
+		background-size: 120px;
+		height: 120px;
+		width: 100vw;
+		margin-left: 20%;
+	}
+
+	.malito {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/192317447-32fd40c1-4a42-4572-b218-61f8382ca1dd.png');
+		background-repeat: no-repeat;
+		background-size: 150px;
+		height: 120px;
+		width: 100vw;
+		margin-left: 55%;
 	}
 
 	.rodape {
@@ -208,13 +625,214 @@ body {
 		z-index: 20;
 		left: 300px;
 	}
-
-
-
-
-
 }
 
 /*Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-Mobile-rotação-*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	#menu {
+		margin-top: 0px;
+		background: #000000;
+		opacity: 0.7;
+		color: #FFF;
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 20;
+	}
+
+
+	#menu ul,
+	#menu li {
+		margin: 0 auto;
+		padding: 0;
+		list-style: none
+	}
+
+
+	#menu ul {
+		width: 100%;
+	}
+
+
+	#menu li {
+		float: left;
+		display: inline;
+		position: relative;
+	}
+
+
+	#menu a {
+		display: block;
+		line-height: 45px;
+		padding: 0 14px;
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 16px;
+	}
+
+	#menu a.dropdown-arrow:after {
+		content: "\25BE";
+		margin-left: 5px;
+	}
+
+
+	#menu li a:hover {
+		color: #07a9df;
+		background: #4e4d4d;
+		height: 45px;
+	}
+
+
+	#menu input {
+		display: none;
+		margin: 0;
+		padding: 0;
+		height: 45px;
+		width: 100%;
+		opacity: 0;
+		cursor: pointer
+	}
+
+
+	#menu ul.sub-menus {
+		height: auto;
+		overflow: hidden;
+		width: 170px;
+		background: #838080;
+		position: absolute;
+		z-index: 99;
+		display: none;
+	}
+
+
+	#menu ul.sub-menus li {
+		display: block;
+		width: 100%;
+	}
+
+	#menu ul.sub-menus a {
+		color: #fcfafb;
+		font-size: 16px;
+	}
+
+
+	#menu li:hover ul.sub-menus {
+		display: block;
+	}
+
+
+	#menu ul.sub-menus a:hover {
+		color: #07a9df;
+		background: #4e4d4d;
+	}
+
+	.carton {
+		position: relative;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191371423-7ea1f613-4f86-4492-b62e-a81994a399f5.png');
+		background-repeat: no-repeat;
+		width: 1280px;
+		height: 650px;
+		float: right;
+		margin-top: -20px;
+		border-bottom: #000000 5px solid;
+	}
+
+	.sob {
+		display: flex;
+		width: 100vw;
+	}
+
+	p,
+	h2 {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	h2 {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	p {
+		padding-top: 5px;
+		font-size: larger;
+	}
+
+	.cont {
+		position: relative;
+	}
+
+	.whats {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191387472-afe32c6a-dd0a-45b9-bcc5-5e5048e9aa05.png');
+		background-repeat: no-repeat;
+		background-size: 120px;
+		height: 120px;
+		width: 100vw;
+		margin-left: 20%;
+	}
+
+	.malito {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/192317447-32fd40c1-4a42-4572-b218-61f8382ca1dd.png');
+		background-repeat: no-repeat;
+		background-size: 150px;
+		height: 120px;
+		width: 100vw;
+		margin-left: 55%;
+
+
+	}
+
+	.rodape {
+		position: relative;
+		background-color: #696767;
+		width: 100%;
+		height: 70px;
+		list-style-type: none;
+		border-top: 3px solid #000000;
+		margin-top: 150PX;
+
+	}
+
+	.face {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938348-96ebe78c-d58b-4c71-9715-a69d84746064.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 460px;
+	}
+
+	.behance {
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938415-eb0bb140-fe50-45e4-86bf-24f73616b5b0.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 530px;
+	}
+
+	.linken {
+		display: inline;
+		position: absolute;
+		background-image: url('https://user-images.githubusercontent.com/89275430/191938451-5275ba47-ae04-4e51-a6ed-5c658181bc42.png');
+		background-repeat: no-repeat;
+		background-size: 60PX;
+		width: 100VW;
+		height: 60px;
+		list-style-type: none;
+		margin-top: 137PX;
+		z-index: 20;
+		left: 600px;
+	}
+}
