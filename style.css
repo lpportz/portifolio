@@ -646,7 +646,7 @@ h1::after {
 
 
 	#menu ul {
-		width: 100%;
+		width: 100vw;
 	}
 
 
@@ -922,7 +922,7 @@ h1::after {
 		margin-top: 0px;
 		background: rgba(0, 0, 0);
 		color: #FFF;
-		width: 100%;
+		width: 100vw;
 		height: 45px;
 		position: fixed;
 		z-index: 20;
