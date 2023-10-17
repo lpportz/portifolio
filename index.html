@@ -18,10 +18,10 @@
 
 <!-- menu suspenso portifolio -->
 
-<body>
+<body class="pag1">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portifólio Lucas Portz</a>
+            <a class="navbar-brand" href="#">Lucas Portz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
@@ -50,10 +50,8 @@
                                 Diplomas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#redesociais">Rede Sociais</a>
+                            <a class="nav-link active" aria-current="page" href="contatos.html">Contato e Rede
+                                Sociais</a>
                         </li>
 
                     </ul>
@@ -63,17 +61,13 @@
         </div>
     </nav>
     <!-- Conteúdo da página -->
-    <DIV class="conjunto">
-        <img src="https://user-images.githubusercontent.com/89275430/191371423-7ea1f613-4f86-4492-b62e-a81994a399f5.png"
-            alt="Banner 1" class="banner1">
+    <!-- minha historia. -->
+    <div class="card">
         <h1 class="txtbanner">"Ser diferente pode ser mais estimulante do que ser o melhor"</h1>
-    </DIV>
-    <a name="sobre"></a>
-    <div class="container1">
-        <div class="historia">
-            <h2>Um pouquinho da minha história...</h2>
-
-
+        <img class="fotobanner" style="width: 100%;" src="./img/um pouco sobre mim..png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><a name="sobre"></a></h5>
+            <p class="card-text">
             <p>
                 Meu nome é Lucas Portz, tenho 33 anos e sou natural do Rio Grande do Sul. Desde criança, tive uma paixão
                 pela tecnologia. Passava horas diante de computadores, brincando de ser cineasta e utilizando celulares
@@ -103,96 +97,109 @@
                 objetivos, e faço isso todos os dias. Hoje, descobri em mim uma pessoa determinada, focada, forte e
                 persistente.
             </p>
+            </p>
         </div>
+    </div>
+    <!-- o que falam sobre mim -->
+    <div class="fundodosbanners">
+        <img class="falamsobremim" src="./img/Coisas que falam sobre mim.png" alt="">
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
 
-        <!-- conteúdo após banner primario-->
-        <h2>Como as pessoas me descrevem.</h2>
-
-        <div class="container">
-            <div class="comhelo">
-                <h3>Heloísa (Atual Chefe)</h3>
-                <p style="color: rgb(94, 9, 116);">Qual é uma atividade ou ideia que você acha que eu sou
-                    apaixonado?</p>
-                <p>Adora eletrônica e computação. Curiosidade e criatividade o definem. Sempre quer saber entender o
-                    funcionamento e utilidade, seja de um liquidificador estragado ou um projeto referente a
-                    pessoas.
-                    Constante buscador. Se não compreende o contexto, trava. Busca os porquês em tudo.</p>
-                <p style="color: rgb(94, 9, 116);">Quais são algumas coisas que você acha que eu valorizo?</p>
-                <p>Valoriza a família e a evolução na ciência. Eletrônica e informática são encaradas como seu
-                    desafio na
-                    busca do conhecimento. Testa sua capacidade para encontrar soluções sempre auxiliando.</p>
-                <p style="color: rgb(94, 9, 116);">Que pontos fortes você acha que eu tenho?</p>
-                <p>Enfrenta o desafio rapidamente e o resolve. É leal com família e amigos. Possui tenacidade e é
-                    pró-ativo.
-                    Não descansa enquanto não encontra solução para qualquer problema. Raciocínio lógico e rápido.
-                </p>
-                <p style="color: rgb(94, 9, 116);">O que me destaca de outras pessoas que você conhece ou com
-                    quem
-                    trabalha?</p>
-                <p>Sinceridade, criatividade e bom humor. Paciente no trato com pessoas. Considera-se "enjambrador"
-                    quando
-                    na verdade é criativo. Inventa soluções com facilidade. Busca alternativas sempre. Analisa e
-                    decide logo
-                    a seguir.</p>
-            </div>
-
-            <div class="comelias">
-                <h3>Elias (ex colega de trabalho)</h3>
-                <p style="color: rgb(94, 9, 116);">Qual é uma atividade ou ideia que você acha que eu sou
-                    apaixonado?</p>
-                <p>Empreendedorismo, nos últimos anos começou a se aprofundar e se apaixonar por tecnologia, lógica
-                    de
-                    programação e arquitetura de sistemas.</p>
-                <p style="color: rgb(94, 9, 116);">Quais são algumas coisas que você acha que eu valorizo?</p>
-                <p>Trabalho em equipe, meritocracia e confiança</p>
-                <p style="color: rgb(94, 9, 116);">Que pontos fortes você acha que eu tenho?</p>
-                <p>Muito esforçado, trabalhador e honesto.</p>
-                <p style="color: rgb(94, 9, 116);">O que me destaca de outras pessoas que você conhece ou com
-                    quem
-                    trabalha?</p>
-                <p>Sempre pensando fora da caixa, procurando uma maneira de melhorar os processos em que está
-                    trabalhando e
-                    uma pessoa que podemos sempre contar.</p>
+                <div class="card-body">
+                    <h5 class="card-title">Heloísa (Atual Chefe)</h5>
+                    <p class="card-text">
+                    <p style="color: rgb(94, 9, 116);">Qual é uma atividade ou ideia que você acha que eu sou
+                        apaixonado?</p>
+                    <p>Adora eletrônica e computação. Curiosidade e criatividade o definem. Sempre quer saber entender o
+                        funcionamento e utilidade, seja de um liquidificador estragado ou um projeto referente a
+                        pessoas.
+                        Constante buscador. Se não compreende o contexto, trava. Busca os porquês em tudo.</p>
+                    <p style="color: rgb(94, 9, 116);">Quais são algumas coisas que você acha que eu valorizo?</p>
+                    <p>Valoriza a família e a evolução na ciência. Eletrônica e informática são encaradas como seu
+                        desafio na
+                        busca do conhecimento. Testa sua capacidade para encontrar soluções sempre auxiliando.</p>
+                    <p style="color: rgb(94, 9, 116);">Que pontos fortes você acha que eu tenho?</p>
+                    <p>Enfrenta o desafio rapidamente e o resolve. É leal com família e amigos. Possui tenacidade e é
+                        pró-ativo.
+                        Não descansa enquanto não encontra solução para qualquer problema. Raciocínio lógico e rápido.
+                    </p>
+                    <p style="color: rgb(94, 9, 116);">O que me destaca de outras pessoas que você conhece ou com
+                        quem
+                        trabalha?</p>
+                    <p>Sinceridade, criatividade e bom humor. Paciente no trato com pessoas. Considera-se "enjambrador"
+                        quando
+                        na verdade é criativo. Inventa soluções com facilidade. Busca alternativas sempre. Analisa e
+                        decide logo
+                        a seguir.</p>
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card">
 
-
-
-        <footer>
-            <!-- Copyright -->
-            <div>
-                Este site foi desenvolvido por Lucas Portz.
+                <div class="card-body">
+                    <h5 class="card-title">Elias (ex colega de trabalho)</h5>
+                    <p class="card-text">
+                    <p style="color: rgb(94, 9, 116);">Qual é uma atividade ou ideia que você acha que eu sou
+                        apaixonado?</p>
+                    <p>Empreendedorismo, nos últimos anos começou a se aprofundar e se apaixonar por tecnologia, lógica
+                        de
+                        programação e arquitetura de sistemas.</p>
+                    <p style="color: rgb(94, 9, 116);">Quais são algumas coisas que você acha que eu valorizo?</p>
+                    <p>Trabalho em equipe, meritocracia e confiança</p>
+                    <p style="color: rgb(94, 9, 116);">Que pontos fortes você acha que eu tenho?</p>
+                    <p>Muito esforçado, trabalhador e honesto.</p>
+                    <p style="color: rgb(94, 9, 116);">O que me destaca de outras pessoas que você conhece ou com
+                        quem
+                        trabalha?</p>
+                    <p>Sempre pensando fora da caixa, procurando uma maneira de melhorar os processos em que está
+                        trabalhando e
+                        uma pessoa que podemos sempre contar.</p>
+                    </p>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Copyright -->
+        <div>
+            Este site foi desenvolvido por Lucas Portz.
+        </div>
+    </footer>
 
 
-        <!-- scripts para rodar o boostrap e animações da página. -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- scripts para rodar o boostrap e animações da página. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-        <!-- script para fazer o texto animado no banner -->
-        <script>
-            function updatemenu() {
-                if (document.getElementById('responsive-menu').checked == true) {
-                    document.getElementById('menu').style.borderBottomRightRadius = '0';
-                    document.getElementById('menu').style.borderBottomLeftRadius = '0';
-                } else {
-                    document.getElementById('menu').style.borderRadius = '10px';
-                }
+    <!-- script para fazer o texto animado no banner -->
+    <script>
+        function updatemenu() {
+            if (document.getElementById('responsive-menu').checked == true) {
+                document.getElementById('menu').style.borderBottomRightRadius = '0';
+                document.getElementById('menu').style.borderBottomLeftRadius = '0';
+            } else {
+                document.getElementById('menu').style.borderRadius = '10px';
             }
+        }
 
-            function typeWriter(elemento) {
-                const textoArray = elemento.innerHTML.split('');
-                elemento.innerHTML = '';
-                textoArray.forEach((letra, i) => {
-                    setTimeout(() => elemento.innerHTML += letra, 75 * i);
-                });
-            }
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+        }
 
-            const titulo = document.querySelector('.txtbanner');
-            typeWriter(titulo);
-        </script>
+        const titulo = document.querySelector('.txtbanner');
+        typeWriter(titulo);
+    </script>
 
 </body>
 
